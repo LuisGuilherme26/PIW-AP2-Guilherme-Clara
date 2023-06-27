@@ -3,9 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navbar from './components/Navbar';
 import CadastrarAluno from './components/CadastrarAluno';
 import ListarAluno from './components/ListarAluno';
-import EditarAluno from './components/EditarAluno';
-import RecuperarAluno from './components/RecuperarAluno';
-import DeletarAluno from './components/DeletarAluno';
+import Aprovados from './components/Aprovados';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -14,9 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<ListarAluno/>}/>
         <Route path="/cadastrar" element={<CadastrarAluno/>}/>
-        <Route path="/editar" element={<EditarAluno/>}/>
-        <Route path="/recuperar" element={<RecuperarAluno/>}/>
-        <Route path="/deletar" element={<DeletarAluno/>}/>
+        <Route path="/aprovados" element={<Aprovados/>}/>
+        <Route path="/login" element={<Login/>}/>
       </Routes>
     </Router>
   );
